@@ -2,6 +2,8 @@ version: '3.4'
 services:
   db:
     image: postgres:15.1
+    container_name: postgres-15
+    restart: always
     environment:
       POSTGRES_USER: luciano
       POSTGRES_PASSWORD: 789789
