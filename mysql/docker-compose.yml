@@ -1,0 +1,15 @@
+version: '3.4'
+services:
+  db:
+    image: mysql:8.0
+    container_name: mysqk-8
+    restart: aways
+    command: mysqld --default-authentication-plugin=mysql_native_password
+    environment:
+      TZ: America/Sao_Paulo
+      MYSQL_ROOT_PASSWORD: 789789
+      MYSQL_ROOT_USER: luciano
+      MYSQL_PASSWORD: 789789
+      MYSQL_DATABASE: teste
+    ports:
+      - "3306:3306"
