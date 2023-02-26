@@ -8,5 +8,7 @@ services:
       POSTGRES_USER: luciano
       POSTGRES_PASSWORD: 789789
       POSTGRES_DB:
+    volumes:
+      - postgres:/data/postgres  
     ports:
       - "5432:5432"
